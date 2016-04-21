@@ -1,9 +1,7 @@
 node ('docker') {
   stage 'Code Checkout'
   git url: 'https://github.com/mikeagileclouds/swarm-microservice-demo-v1/cluster-detailed.png'
-  checkout scm
-  
-  sh 'ls -l'
+  sh 'ls -la'
 
   stage 'Docker image build'
   echo "${TEST}" 
